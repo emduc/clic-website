@@ -26,6 +26,7 @@ import { commissionsPage } from './pages/commissions/commissions-page'
 import { poleRouter } from './pages/about/poles/pole-router'
 import { eventRouter } from './pages/events/event-router'
 import { eventsPage } from './pages/events/events-page'
+import { testPage } from './pages/test/test-page'
 
 /** Fresh router instance */
 const router = express.Router()
@@ -59,6 +60,8 @@ router.get('/coaching', coachingPage.render)
  * Commissions page
  */
 router.get('/commissions', commissionsPage.render)
+
+router.get('/test', testPage.render)
 
 /**
  * Sponsors router
